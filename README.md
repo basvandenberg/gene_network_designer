@@ -1,13 +1,17 @@
 # Gene Network Designer
 
-This software is written as part of my masters thesis at the Delft University
-of Technology. The software is not extensively tested and the documentation is
-very limited. For more information about the software and about the project,
-consult my masters thesis document:
+This software is written as part of my master thesis at the Delft University of
+Technology. The software is not extensively tested and the documentation is very
+limited. For more information about the software and about the project, consult 
+my master thesis document:
 http://repository.tudelft.nl/view/ir/uuid:fff3c287-ff65-454a-8ec1-42425d94280c/
 
-The java source files can be found in the src directory, jar-files of the
-libraries that are used by the software can be found in the
+the INSTALL.txt file explains about the installation of the software. 
+TUTORIAL.txt provides a simple tutorial that runs a simulation on a provided
+gene network.
+
+The java source files can be found in the src directory, jar-files of the 
+libraries that are used by the software can be found in the 
 geneNetworkDesigner_lib directory. The javadoc documentation is stored in the
 doc directory (use index.html to browse the documentation).
 
@@ -21,8 +25,8 @@ The data directory contains:
   stored in this directory. The user has to clean this directory manually!
 - tmp_model - Stores the models that are used for simulation (fernml-files)
 
-To build network templates and run simulations with it consult the provided 
-examples and the documentation on the download site.
+To build network templates, consult the provided examples and the master thesis
+document.
 
 ## Requirements
 
@@ -35,24 +39,25 @@ runs without it as well)
 
 ## Install
 
-Unzip the geneNetworkDesigner.tar.gz file to a location of your choice.
+Extract the geneNetworkDesigner.tar.gz (or .zip) file to a location of your 
+choice.
 
 ### Test
 
-Use the command line to navigate to the unarchived (unzipped) 
-geneNetworkDesigner directory. Type:
+Use the command line to navigate to the extracted geneNetworkDesigner directory
+and enter the command:
 
 java -jar geneNetworkDesigner.jar
 
-and press enter. The software should start loading the bioparts database.
+The software should start loading the bioparts database.
 
 ## Tutorial
 
 This tutorial runs a simulation on a randomly selected Decoder device. 
 
 1. Run a command line tool.
-2. Go to the GeneNetworkDesigner directory.
-3. Run the command 'java -jar LogicGeneNetworkDesigner.jar'. As soon as the 
+2. Go to the geneNetworkDesigner directory.
+3. Run the command 'java -jar geneNetworkDesigner.jar'. As soon as the 
    bioparts database is loaded in memory, the following options should be 
    presented:
    
