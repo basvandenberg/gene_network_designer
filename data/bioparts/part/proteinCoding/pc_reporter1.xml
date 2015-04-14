@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protein_coding name="pc_reporter1">
+  <protein type="reporter">reporter1</protein>
+  <k_deg_mrna>0.002423157448671916</k_deg_mrna>
+</protein_coding>
+

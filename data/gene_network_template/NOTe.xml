@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network name="NOTe">
+
+  <vertice id="v0"/>
+
+  <edge id="e0" signal="-">
+    <src vertice_id="v0" />
+  </edge>
+
+  <output id="out0" edge_id="e0" />
+
+</network>

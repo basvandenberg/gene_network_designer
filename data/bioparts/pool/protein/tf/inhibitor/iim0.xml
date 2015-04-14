@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protein name="iim0" type="inhibitor">
+  <k_deg_protein>0.0012698158695757936</k_deg_protein>
+  <small_molecule name="es_iim0">
+    <k_bind_smallMolecule>8.33E-4</k_bind_smallMolecule>
+    <k_unbind_smallMolecule>0.00167</k_unbind_smallMolecule>
+  </small_molecule>
+</protein>
+

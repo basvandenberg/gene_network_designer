@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logic_device_settings name="Demultiplexer0">
+
+  <gene_network>Demultiplexer</gene_network>
+
+  <input id="in0">iim0</input>
+  <input id="in1">iim1</input>
+
+  <output id="out0">reporter0</output>
+  <output id="out1">reporter1</output>
+
+  <binary_timing_diagram>
+    <plot id="in0" >00110</plot>
+    <plot id="in1" >01100</plot>
+    <plot id="out0">01000</plot>
+    <plot id="out1">00100</plot>
+  </binary_timing_diagram>
+
+  <state_time>7200</state_time>
+  <visual>true</visual>
+
+</logic_device_settings>

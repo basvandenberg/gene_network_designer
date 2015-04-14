@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network name="Decoder">
+
+  <subnetwork id="NOTe0" name="NOTe" />
+  <subnetwork id="NOTe1" name="NOTe" />
+  <subnetwork id="NOTi0" name="NOTi" />
+  <subnetwork id="NOTi1" name="NOTi" />
+  <subnetwork id="NORii0" name="NORii" />
+  <subnetwork id="NORii1" name="NORii" />
+  <subnetwork id="NORii2" name="NORii" />
+  <subnetwork id="NORii3" name="NORii" />
+
+  <connection_edge id="e0">
+    <src network="NOTe0" output_id="out0" />
+    <dest network="NOTi0" input_id="in0" />
+    <dest network="NORii3" input_id="in0" />
+    <dest network="NORii2" input_id="in1" />
+  </connection_edge>
+  <connection_edge id="e1">
+    <src network="NOTe1" output_id="out0" />
+    <dest network="NOTi1" input_id="in0" />
+    <dest network="NORii1" input_id="in0" />
+    <dest network="NORii3" input_id="in1" />
+  </connection_edge>
+  <connection_edge id="e2">
+    <src network="NOTi0" output_id="out0" />
+    <dest network="NORii0" input_id="in0" />
+    <dest network="NORii1" input_id="in1" />
+  </connection_edge>
+  <connection_edge id="e3">
+    <src network="NOTi1" output_id="out0" />
+    <dest network="NORii0" input_id="in1" />
+    <dest network="NORii2" input_id="in0" />
+  </connection_edge>
+
+  <input id="in0" edge_id="e0" />
+  <input id="in1" edge_id="e1" />
+
+  <output id="out0" network="NORii0" output_id="out0" />
+  <output id="out1" network="NORii2" output_id="out0" />
+  <output id="out2" network="NORii1" output_id="out0" />
+  <output id="out3" network="NORii3" output_id="out0" />
+
+</network>

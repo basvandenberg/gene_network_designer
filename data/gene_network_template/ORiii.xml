@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network name="ORiii">
+
+  <subnetwork id="ORii0" name="ORii" />
+  <subnetwork id="ORii1" name="ORii" />
+
+  <connection_edge id="e0">
+    <src network="ORii0" output_id="out0" />
+    <dest network="ORii1" input_id="in0" />
+  </connection_edge>
+
+  <input id="in0" network="ORii0" input_id="in0" />
+  <input id="in1" network="ORii0" input_id="in1" />
+  <input id="in2" network="ORii1" input_id="in1" />
+
+  <output id="out0" network="ORii1" output_id="out0" />
+
+</network>

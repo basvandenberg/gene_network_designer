@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<promoter name="pm_i0d1_i0d3_11">
+  <operators>
+    <operator>
+      <tf type="inhibitor">i0d1</tf>
+      <k_bind_tf>0.0029308535984657125</k_bind_tf>
+      <k_unbind_tf>0.0018099501003738876</k_unbind_tf>
+    </operator>
+    <operator>
+      <tf type="inhibitor">i0d3</tf>
+      <k_bind_tf>0.0033653468113918846</k_bind_tf>
+      <k_unbind_tf>0.001890806056324292</k_unbind_tf>
+    </operator>
+  </operators>
+  <k_transcription>0.008415841422818244</k_transcription>
+</promoter>
+

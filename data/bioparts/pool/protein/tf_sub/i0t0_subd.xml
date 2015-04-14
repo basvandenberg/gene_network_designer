@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protein name="i0t0_subd" type="tf_sub">
+  <k_deg_protein>3.90827109477878E-4</k_deg_protein>
+  <dimer>
+    <p1>i0t0_subm</p1>
+    <p2>i0t0_subm</p2>
+    <k_bind_protein>7.254531816422427E-4</k_bind_protein>
+    <k_unbind_protein>1.67E-5</k_unbind_protein>
+  </dimer>
+</protein>
+

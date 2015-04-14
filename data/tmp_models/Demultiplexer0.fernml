@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fernml version="1.0">
+  <listOfSpecies>
+    <species name="pg0_gene_00" initialAmount="1" />
+    <species name="pg0_gene_01" initialAmount="0" />
+    <species name="pg0_gene_10" initialAmount="0" />
+    <species name="pg0_gene_11" initialAmount="0" />
+    <species name="pg0_mRNA" initialAmount="0" />
+    <species name="pg1_gene_0" initialAmount="1" />
+    <species name="pg1_mRNA" initialAmount="0" />
+    <species name="pg2_gene_0" initialAmount="1" />
+    <species name="pg2_mRNA" initialAmount="0" />
+    <species name="pg3_gene_00" initialAmount="1" />
+    <species name="pg3_gene_01" initialAmount="0" />
+    <species name="pg3_gene_10" initialAmount="0" />
+    <species name="pg3_gene_11" initialAmount="0" />
+    <species name="pg3_mRNA" initialAmount="0" />
+    <species name="pg4_gene_0" initialAmount="1" />
+    <species name="pg4_gene_1" initialAmount="0" />
+    <species name="pg4_mRNA" initialAmount="0" />
+    <species name="i0t3_subd" initialAmount="0" />
+    <species name="reporter1" initialAmount="0" />
+    <species name="i0t3" initialAmount="0" />
+    <species name="iim1" initialAmount="0" />
+    <species name="i0t3_subm" initialAmount="0" />
+    <species name="reporter0" initialAmount="0" />
+    <species name="iim0" initialAmount="0" />
+    <species name="es_iim1" initialAmount="0" />
+    <species name="iim1_es_iim1" initialAmount="0" />
+    <species name="es_iim0" initialAmount="0" />
+    <species name="iim0_es_iim0" initialAmount="0" />
+    <species name="empty_set" initialAmount="0" />
+  </listOfSpecies>
+  <listOfReactions>
+    <reaction kineticConstant="0.009847541684001317">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_00" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_00" />
+        <speciesReference name="pg0_mRNA" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.003494154018223702">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_00" />
+        <speciesReference name="iim1" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_01" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0016989965528040466">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_01" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_00" />
+        <speciesReference name="iim1" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="7.927901666889039E-4">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_01" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_00" />
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="8.33E-4">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_01" />
+        <speciesReference name="es_iim1" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_00" />
+        <speciesReference name="iim1_es_iim1" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0039018959004186284">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_00" />
+        <speciesReference name="iim0" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_10" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0016660365460366183">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_10" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_00" />
+        <speciesReference name="iim0" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0012698158695757936">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_10" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_00" />
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="8.33E-4">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_10" />
+        <speciesReference name="es_iim0" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_00" />
+        <speciesReference name="iim0_es_iim0" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0039018959004186284">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_01" />
+        <speciesReference name="iim0" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_11" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0016660365460366183">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_11" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_01" />
+        <speciesReference name="iim0" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0012698158695757936">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_11" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_01" />
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="8.33E-4">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_11" />
+        <speciesReference name="es_iim0" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_01" />
+        <speciesReference name="iim0_es_iim0" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.003494154018223702">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_10" />
+        <speciesReference name="iim1" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_11" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0016989965528040466">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_11" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_10" />
+        <speciesReference name="iim1" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="7.927901666889039E-4">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_11" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_10" />
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="8.33E-4">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_11" />
+        <speciesReference name="es_iim1" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_10" />
+        <speciesReference name="iim1_es_iim1" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.007434210526315791">
+      <listOfReactants>
+        <speciesReference name="pg0_mRNA" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_mRNA" />
+        <speciesReference name="reporter1" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.002423157448671916">
+      <listOfReactants>
+        <speciesReference name="pg0_mRNA" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.009013157894736846">
+      <listOfReactants>
+        <speciesReference name="pg1_gene_0" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg1_gene_0" />
+        <speciesReference name="pg1_mRNA" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.009013157894736846">
+      <listOfReactants>
+        <speciesReference name="pg1_mRNA" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg1_mRNA" />
+        <speciesReference name="iim1" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.002535359542958619">
+      <listOfReactants>
+        <speciesReference name="pg1_mRNA" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.009605263157894742">
+      <listOfReactants>
+        <speciesReference name="pg2_gene_0" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg2_gene_0" />
+        <speciesReference name="pg2_mRNA" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.009802631578947374">
+      <listOfReactants>
+        <speciesReference name="pg2_mRNA" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg2_mRNA" />
+        <speciesReference name="iim0" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0033071631461584258">
+      <listOfReactants>
+        <speciesReference name="pg2_mRNA" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.006684779755562364">
+      <listOfReactants>
+        <speciesReference name="pg3_gene_00" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg3_gene_00" />
+        <speciesReference name="pg3_mRNA" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.003998027880563485">
+      <listOfReactants>
+        <speciesReference name="pg3_gene_00" />
+        <speciesReference name="i0t3" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg3_gene_01" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0016083958721957933">
+      <listOfReactants>
+        <speciesReference name="pg3_gene_01" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg3_gene_00" />
+        <speciesReference name="i0t3" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0016310911727491072">
+      <listOfReactants>
+        <speciesReference name="pg3_gene_01" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg3_gene_00" />
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0038528257189737753">
+      <listOfReactants>
+        <speciesReference name="pg3_gene_00" />
+        <speciesReference name="iim1" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg3_gene_10" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0018361554226175448">
+      <listOfReactants>
+        <speciesReference name="pg3_gene_10" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg3_gene_00" />
+        <speciesReference name="iim1" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="7.927901666889039E-4">
+      <listOfReactants>
+        <speciesReference name="pg3_gene_10" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg3_gene_00" />
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="8.33E-4">
+      <listOfReactants>
+        <speciesReference name="pg3_gene_10" />
+        <speciesReference name="es_iim1" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg3_gene_00" />
+        <speciesReference name="iim1_es_iim1" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0038528257189737753">
+      <listOfReactants>
+        <speciesReference name="pg3_gene_01" />
+        <speciesReference name="iim1" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg3_gene_11" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0018361554226175448">
+      <listOfReactants>
+        <speciesReference name="pg3_gene_11" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg3_gene_01" />
+        <speciesReference name="iim1" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="7.927901666889039E-4">
+      <listOfReactants>
+        <speciesReference name="pg3_gene_11" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg3_gene_01" />
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="8.33E-4">
+      <listOfReactants>
+        <speciesReference name="pg3_gene_11" />
+        <speciesReference name="es_iim1" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg3_gene_01" />
+        <speciesReference name="iim1_es_iim1" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.003998027880563485">
+      <listOfReactants>
+        <speciesReference name="pg3_gene_10" />
+        <speciesReference name="i0t3" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg3_gene_11" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0016083958721957933">
+      <listOfReactants>
+        <speciesReference name="pg3_gene_11" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg3_gene_10" />
+        <speciesReference name="i0t3" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0016310911727491072">
+      <listOfReactants>
+        <speciesReference name="pg3_gene_11" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg3_gene_10" />
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.00940789473684211">
+      <listOfReactants>
+        <speciesReference name="pg3_mRNA" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg3_mRNA" />
+        <speciesReference name="reporter0" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0036313916197600795">
+      <listOfReactants>
+        <speciesReference name="pg3_mRNA" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.009127338079846791">
+      <listOfReactants>
+        <speciesReference name="pg4_gene_0" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg4_gene_0" />
+        <speciesReference name="pg4_mRNA" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.003751619205183928">
+      <listOfReactants>
+        <speciesReference name="pg4_gene_0" />
+        <speciesReference name="iim0" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg4_gene_1" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.001531198531021923">
+      <listOfReactants>
+        <speciesReference name="pg4_gene_1" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg4_gene_0" />
+        <speciesReference name="iim0" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0012698158695757936">
+      <listOfReactants>
+        <speciesReference name="pg4_gene_1" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg4_gene_0" />
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="8.33E-4">
+      <listOfReactants>
+        <speciesReference name="pg4_gene_1" />
+        <speciesReference name="es_iim0" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg4_gene_0" />
+        <speciesReference name="iim0_es_iim0" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.008026315789473687">
+      <listOfReactants>
+        <speciesReference name="pg4_mRNA" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg4_mRNA" />
+        <speciesReference name="i0t3_subm" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.001880399210041146">
+      <listOfReactants>
+        <speciesReference name="pg4_mRNA" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="5.863573583054168E-4">
+      <listOfReactants>
+        <speciesReference name="i0t3_subm" />
+        <speciesReference name="i0t3_subm" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="i0t3_subd" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="1.67E-5">
+      <listOfReactants>
+        <speciesReference name="i0t3_subd" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="i0t3_subm" />
+        <speciesReference name="i0t3_subm" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="4.4776755694947884E-4">
+      <listOfReactants>
+        <speciesReference name="i0t3_subd" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0012">
+      <listOfReactants>
+        <speciesReference name="reporter1" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="3.2088389822316604E-4">
+      <listOfReactants>
+        <speciesReference name="i0t3_subd" />
+        <speciesReference name="i0t3_subd" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="i0t3" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="1.67E-5">
+      <listOfReactants>
+        <speciesReference name="i0t3" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="i0t3_subd" />
+        <speciesReference name="i0t3_subd" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0016310911727491072">
+      <listOfReactants>
+        <speciesReference name="i0t3" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="7.927901666889039E-4">
+      <listOfReactants>
+        <speciesReference name="iim1" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="4.2247142185372123E-4">
+      <listOfReactants>
+        <speciesReference name="i0t3_subm" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0012">
+      <listOfReactants>
+        <speciesReference name="reporter0" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0012698158695757936">
+      <listOfReactants>
+        <speciesReference name="iim0" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="8.33E-4">
+      <listOfReactants>
+        <speciesReference name="iim1" />
+        <speciesReference name="es_iim1" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="iim1_es_iim1" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.00167">
+      <listOfReactants>
+        <speciesReference name="iim1_es_iim1" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="iim1" />
+        <speciesReference name="es_iim1" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="7.927901666889039E-4">
+      <listOfReactants>
+        <speciesReference name="iim1_es_iim1" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="es_iim1" />
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="8.33E-4">
+      <listOfReactants>
+        <speciesReference name="iim0" />
+        <speciesReference name="es_iim0" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="iim0_es_iim0" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.00167">
+      <listOfReactants>
+        <speciesReference name="iim0_es_iim0" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="iim0" />
+        <speciesReference name="es_iim0" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0012698158695757936">
+      <listOfReactants>
+        <speciesReference name="iim0_es_iim0" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="es_iim0" />
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+  </listOfReactions>
+</fernml>
+

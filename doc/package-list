@@ -1,0 +1,8 @@
+bd.biopart
+bd.gene_network
+bd.gene_network.logic
+bd.gene_network.logic.experiments
+bd.gene_network.template
+bd.global
+bd.model
+bd.simulation

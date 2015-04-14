@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network name="NORii">
+
+  <vertice id="v0" />
+
+  <edge id="e0" type="-">
+    <dest vertice_id="v0" />
+  </edge>
+  <edge id="e1" type="-">
+    <dest vertice_id="v0" />
+  </edge>
+  <edge id="e2">
+    <src vertice_id="v0" />
+  </edge>
+
+  <input id="in0" edge_id="e0" />
+  <input id="in1" edge_id="e1" />
+
+  <output id="out0" edge_id="e2" />
+
+</network>

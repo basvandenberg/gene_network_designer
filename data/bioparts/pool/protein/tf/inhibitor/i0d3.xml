@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protein name="i0d3" type="inhibitor">
+  <k_deg_protein>0.0011642604578271155</k_deg_protein>
+  <dimer>
+    <p1>i0d3_subm</p1>
+    <p2>i0d3_subm</p2>
+    <k_bind_protein>2.4107220151286163E-4</k_bind_protein>
+    <k_unbind_protein>1.67E-5</k_unbind_protein>
+  </dimer>
+</protein>
+

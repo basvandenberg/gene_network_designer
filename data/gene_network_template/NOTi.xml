@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network name="NOTi">
+
+  <vertice id="v0" />
+
+  <edge id="e0" type="-">
+    <dest vertice_id="v0" />
+  </edge>
+  <edge id="e1">
+    <src vertice_id="v0" />
+  </edge>
+
+  <input id="in0" edge_id="e0" />
+
+  <output id="out0" edge_id="e1" />
+
+</network>
