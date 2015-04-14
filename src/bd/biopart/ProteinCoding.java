@@ -148,6 +148,9 @@ public class ProteinCoding extends Part {
 	 * @return
 	 */
 	public static ProteinCoding getProteinCoding(Protein protein, List<ProteinCoding> allPC) {
+		if(protein == null) {
+			return null;
+		}
 		if(!protein.isMonomer()) {
 			protein = protein.getMonomer();
 		}

@@ -69,8 +69,8 @@ public class GeneNetworkBuilder {
 		// check if dir exists
 		File file = new File(geneNetworkDir);
 		if(!file.exists()) {
-			String msg = "=> Could not load the device settings:\n" +
-					"- The directory "+file.getAbsolutePath()+" does not exist.";
+			String msg = "\n==> Could not load the device settings:\n" +
+					"The directory "+file.getAbsolutePath()+" does not exist.";
 			throw new FileNotFoundException(msg);
 		}
 		
@@ -113,7 +113,8 @@ public class GeneNetworkBuilder {
 	
 	/**
 	 * @return A random device instantiation based on the gene network using
-	 * the biological parts in the parts database.
+	 * the biological parts in the parts database. Returns null if not able to
+	 * build a random device with the available parts in the database.
 	 */
 	public Device getRandomGeneNetwork() {
 		
@@ -133,20 +134,35 @@ public class GeneNetworkBuilder {
 			
 			// pick a random promoter from promoter library
 			List<Promoter> library = pr.getPromoterLibrary(tfs);
-			Promoter p = library.get(rnd.nextInt(library.size()));
+			Promoter p = null;
+			if(library != null) {
+				p = library.get(rnd.nextInt(library.size()));
+			}
 			
 			// pick random rbs
-			RBS rbs = pr.getAllRBS().get(rnd.nextInt(pr.getAllRBS().size()));
+			RBS rbs = null;
+			if(pr.getAllRBS().size() > 0) {
+				rbs = pr.getAllRBS().get(rnd.nextInt(pr.getAllRBS().size()));
+			}
 			
 			// protein coding part is determined by the wiring
 			Protein product = randomWiring.get(v.getOutput());
 			ProteinCoding pc = ProteinCoding.getProteinCoding(product, pr.getAllPC());
 			
 			// pick random terminator (there's only one...)
-			Terminator t = pr.getAllTerminators().get(rnd.nextInt(pr.getAllTerminators().size()));
+			Terminator t = null;
+			if(pr.getAllTerminators().size() > 0) {
+				t = pr.getAllTerminators().get(rnd.nextInt(pr.getAllTerminators().size()));
+			}
 			
 			// create the protein generator and add it to the list
 			ProteinGenerator pg = new ProteinGenerator(p,rbs,pc,t);
+			
+			// not able to build protein generator with available parts.
+			if(p == null || rbs == null || pc == null || t == null) {
+				return null;
+			}
+			
 			pgs.add(pg);
 		}
 		return new Device(name, pgs, environmentalSignals);

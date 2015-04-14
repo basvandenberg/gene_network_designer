@@ -37,9 +37,11 @@
     <species name="reporter3" initialAmount="0" />
     <species name="i0t3" initialAmount="0" />
     <species name="iim1" initialAmount="0" />
+    <species name="i0t1_subd" initialAmount="0" />
+    <species name="i0t1" initialAmount="0" />
     <species name="i0t3_subm" initialAmount="0" />
     <species name="reporter0" initialAmount="0" />
-    <species name="i0m3" initialAmount="0" />
+    <species name="i0t1_subm" initialAmount="0" />
     <species name="iim0" initialAmount="0" />
     <species name="es_iim1" initialAmount="0" />
     <species name="iim1_es_iim1" initialAmount="0" />
@@ -48,7 +50,7 @@
     <species name="empty_set" initialAmount="0" />
   </listOfSpecies>
   <listOfReactions>
-    <reaction kineticConstant="0.00785878148954789">
+    <reaction kineticConstant="0.008068140445585431">
       <listOfReactants>
         <speciesReference name="pg0_gene_00" />
       </listOfReactants>
@@ -57,18 +59,45 @@
         <speciesReference name="pg0_mRNA" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.003300665532556096">
+    <reaction kineticConstant="0.00400935314645586">
       <listOfReactants>
         <speciesReference name="pg0_gene_00" />
-        <speciesReference name="i0t3" />
+        <speciesReference name="i0t1" />
       </listOfReactants>
       <listOfProducts>
         <speciesReference name="pg0_gene_01" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.0020577654408429286">
+    <reaction kineticConstant="0.0020776508433597036">
       <listOfReactants>
         <speciesReference name="pg0_gene_01" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_00" />
+        <speciesReference name="i0t1" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="8.993299844429143E-4">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_01" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_00" />
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0036331694462383023">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_00" />
+        <speciesReference name="i0t3" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_10" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0020386883327814416">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_10" />
       </listOfReactants>
       <listOfProducts>
         <speciesReference name="pg0_gene_00" />
@@ -77,33 +106,6 @@
     </reaction>
     <reaction kineticConstant="0.0016310911727491072">
       <listOfReactants>
-        <speciesReference name="pg0_gene_01" />
-      </listOfReactants>
-      <listOfProducts>
-        <speciesReference name="pg0_gene_00" />
-        <speciesReference name="empty_set" />
-      </listOfProducts>
-    </reaction>
-    <reaction kineticConstant="0.003681700078603265">
-      <listOfReactants>
-        <speciesReference name="pg0_gene_00" />
-        <speciesReference name="i0m3" />
-      </listOfReactants>
-      <listOfProducts>
-        <speciesReference name="pg0_gene_10" />
-      </listOfProducts>
-    </reaction>
-    <reaction kineticConstant="0.0020643266714140585">
-      <listOfReactants>
-        <speciesReference name="pg0_gene_10" />
-      </listOfReactants>
-      <listOfProducts>
-        <speciesReference name="pg0_gene_00" />
-        <speciesReference name="i0m3" />
-      </listOfProducts>
-    </reaction>
-    <reaction kineticConstant="1.9209625002918705E-4">
-      <listOfReactants>
         <speciesReference name="pg0_gene_10" />
       </listOfReactants>
       <listOfProducts>
@@ -111,52 +113,52 @@
         <speciesReference name="empty_set" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.003681700078603265">
+    <reaction kineticConstant="0.0036331694462383023">
       <listOfReactants>
         <speciesReference name="pg0_gene_01" />
-        <speciesReference name="i0m3" />
-      </listOfReactants>
-      <listOfProducts>
-        <speciesReference name="pg0_gene_11" />
-      </listOfProducts>
-    </reaction>
-    <reaction kineticConstant="0.0020643266714140585">
-      <listOfReactants>
-        <speciesReference name="pg0_gene_11" />
-      </listOfReactants>
-      <listOfProducts>
-        <speciesReference name="pg0_gene_01" />
-        <speciesReference name="i0m3" />
-      </listOfProducts>
-    </reaction>
-    <reaction kineticConstant="1.9209625002918705E-4">
-      <listOfReactants>
-        <speciesReference name="pg0_gene_11" />
-      </listOfReactants>
-      <listOfProducts>
-        <speciesReference name="pg0_gene_01" />
-        <speciesReference name="empty_set" />
-      </listOfProducts>
-    </reaction>
-    <reaction kineticConstant="0.003300665532556096">
-      <listOfReactants>
-        <speciesReference name="pg0_gene_10" />
         <speciesReference name="i0t3" />
       </listOfReactants>
       <listOfProducts>
         <speciesReference name="pg0_gene_11" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.0020577654408429286">
+    <reaction kineticConstant="0.0020386883327814416">
       <listOfReactants>
         <speciesReference name="pg0_gene_11" />
       </listOfReactants>
       <listOfProducts>
-        <speciesReference name="pg0_gene_10" />
+        <speciesReference name="pg0_gene_01" />
         <speciesReference name="i0t3" />
       </listOfProducts>
     </reaction>
     <reaction kineticConstant="0.0016310911727491072">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_11" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_01" />
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.00400935314645586">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_10" />
+        <speciesReference name="i0t1" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_11" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0020776508433597036">
+      <listOfReactants>
+        <speciesReference name="pg0_gene_11" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="pg0_gene_10" />
+        <speciesReference name="i0t1" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="8.993299844429143E-4">
       <listOfReactants>
         <speciesReference name="pg0_gene_11" />
       </listOfReactants>
@@ -182,7 +184,7 @@
         <speciesReference name="empty_set" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.007828947368421055">
+    <reaction kineticConstant="0.009210526315789478">
       <listOfReactants>
         <speciesReference name="pg1_gene_0" />
       </listOfReactants>
@@ -191,7 +193,7 @@
         <speciesReference name="pg1_mRNA" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.007631578947368423">
+    <reaction kineticConstant="0.006447368421052632">
       <listOfReactants>
         <speciesReference name="pg1_mRNA" />
       </listOfReactants>
@@ -208,7 +210,7 @@
         <speciesReference name="empty_set" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.008618421052631582">
+    <reaction kineticConstant="0.006644736842105264">
       <listOfReactants>
         <speciesReference name="pg2_gene_0" />
       </listOfReactants>
@@ -217,7 +219,7 @@
         <speciesReference name="pg2_mRNA" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.00940789473684211">
+    <reaction kineticConstant="0.008815789473684214">
       <listOfReactants>
         <speciesReference name="pg2_mRNA" />
       </listOfReactants>
@@ -234,7 +236,7 @@
         <speciesReference name="empty_set" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.009520537573124953">
+    <reaction kineticConstant="0.006945055437171135">
       <listOfReactants>
         <speciesReference name="pg3_gene_00" />
       </listOfReactants>
@@ -243,25 +245,25 @@
         <speciesReference name="pg3_mRNA" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.0029562840724806725">
+    <reaction kineticConstant="0.0028747437927830414">
       <listOfReactants>
         <speciesReference name="pg3_gene_00" />
-        <speciesReference name="i0m3" />
+        <speciesReference name="i0t1" />
       </listOfReactants>
       <listOfProducts>
         <speciesReference name="pg3_gene_01" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.0014863410149410397">
+    <reaction kineticConstant="0.0015384924817893634">
       <listOfReactants>
         <speciesReference name="pg3_gene_01" />
       </listOfReactants>
       <listOfProducts>
         <speciesReference name="pg3_gene_00" />
-        <speciesReference name="i0m3" />
+        <speciesReference name="i0t1" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="1.9209625002918705E-4">
+    <reaction kineticConstant="8.993299844429143E-4">
       <listOfReactants>
         <speciesReference name="pg3_gene_01" />
       </listOfReactants>
@@ -270,7 +272,7 @@
         <speciesReference name="empty_set" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.003892730924181521">
+    <reaction kineticConstant="0.0034335011445467785">
       <listOfReactants>
         <speciesReference name="pg3_gene_00" />
         <speciesReference name="iim1" />
@@ -279,7 +281,7 @@
         <speciesReference name="pg3_gene_10" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.0014556425885007317">
+    <reaction kineticConstant="0.0015970890191419201">
       <listOfReactants>
         <speciesReference name="pg3_gene_10" />
       </listOfReactants>
@@ -307,7 +309,7 @@
         <speciesReference name="iim1_es_iim1" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.003892730924181521">
+    <reaction kineticConstant="0.0034335011445467785">
       <listOfReactants>
         <speciesReference name="pg3_gene_01" />
         <speciesReference name="iim1" />
@@ -316,7 +318,7 @@
         <speciesReference name="pg3_gene_11" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.0014556425885007317">
+    <reaction kineticConstant="0.0015970890191419201">
       <listOfReactants>
         <speciesReference name="pg3_gene_11" />
       </listOfReactants>
@@ -344,25 +346,25 @@
         <speciesReference name="iim1_es_iim1" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.0029562840724806725">
+    <reaction kineticConstant="0.0028747437927830414">
       <listOfReactants>
         <speciesReference name="pg3_gene_10" />
-        <speciesReference name="i0m3" />
+        <speciesReference name="i0t1" />
       </listOfReactants>
       <listOfProducts>
         <speciesReference name="pg3_gene_11" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.0014863410149410397">
+    <reaction kineticConstant="0.0015384924817893634">
       <listOfReactants>
         <speciesReference name="pg3_gene_11" />
       </listOfReactants>
       <listOfProducts>
         <speciesReference name="pg3_gene_10" />
-        <speciesReference name="i0m3" />
+        <speciesReference name="i0t1" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="1.9209625002918705E-4">
+    <reaction kineticConstant="8.993299844429143E-4">
       <listOfReactants>
         <speciesReference name="pg3_gene_11" />
       </listOfReactants>
@@ -371,7 +373,7 @@
         <speciesReference name="empty_set" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.009605263157894742">
+    <reaction kineticConstant="0.007039473684210528">
       <listOfReactants>
         <speciesReference name="pg3_mRNA" />
       </listOfReactants>
@@ -388,7 +390,7 @@
         <speciesReference name="empty_set" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.008554289959098694">
+    <reaction kineticConstant="0.007508951525108206">
       <listOfReactants>
         <speciesReference name="pg4_gene_00" />
       </listOfReactants>
@@ -397,7 +399,7 @@
         <speciesReference name="pg4_mRNA" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.003573312892864487">
+    <reaction kineticConstant="0.004061860209734518">
       <listOfReactants>
         <speciesReference name="pg4_gene_00" />
         <speciesReference name="i0t3" />
@@ -406,7 +408,7 @@
         <speciesReference name="pg4_gene_01" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.0018908064067208077">
+    <reaction kineticConstant="0.0016803133399192348">
       <listOfReactants>
         <speciesReference name="pg4_gene_01" />
       </listOfReactants>
@@ -424,7 +426,7 @@
         <speciesReference name="empty_set" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.0028080363806122525">
+    <reaction kineticConstant="0.003306072306706997">
       <listOfReactants>
         <speciesReference name="pg4_gene_00" />
         <speciesReference name="iim0" />
@@ -433,7 +435,7 @@
         <speciesReference name="pg4_gene_10" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.0020024832715344228">
+    <reaction kineticConstant="0.0018854689940009147">
       <listOfReactants>
         <speciesReference name="pg4_gene_10" />
       </listOfReactants>
@@ -461,7 +463,7 @@
         <speciesReference name="iim0_es_iim0" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.0028080363806122525">
+    <reaction kineticConstant="0.003306072306706997">
       <listOfReactants>
         <speciesReference name="pg4_gene_01" />
         <speciesReference name="iim0" />
@@ -470,7 +472,7 @@
         <speciesReference name="pg4_gene_11" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.0020024832715344228">
+    <reaction kineticConstant="0.0018854689940009147">
       <listOfReactants>
         <speciesReference name="pg4_gene_11" />
       </listOfReactants>
@@ -498,7 +500,7 @@
         <speciesReference name="iim0_es_iim0" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.003573312892864487">
+    <reaction kineticConstant="0.004061860209734518">
       <listOfReactants>
         <speciesReference name="pg4_gene_10" />
         <speciesReference name="i0t3" />
@@ -507,7 +509,7 @@
         <speciesReference name="pg4_gene_11" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.0018908064067208077">
+    <reaction kineticConstant="0.0016803133399192348">
       <listOfReactants>
         <speciesReference name="pg4_gene_11" />
       </listOfReactants>
@@ -525,7 +527,7 @@
         <speciesReference name="empty_set" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.010000000000000005">
+    <reaction kineticConstant="0.007039473684210528">
       <listOfReactants>
         <speciesReference name="pg4_mRNA" />
       </listOfReactants>
@@ -699,7 +701,7 @@
         <speciesReference name="iim1_es_iim1" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.007631578947368423">
+    <reaction kineticConstant="0.010000000000000005">
       <listOfReactants>
         <speciesReference name="pg5_mRNA" />
       </listOfReactants>
@@ -716,7 +718,7 @@
         <speciesReference name="empty_set" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.008291513169781472">
+    <reaction kineticConstant="0.006619863349650834">
       <listOfReactants>
         <speciesReference name="pg6_gene_0" />
       </listOfReactants>
@@ -725,7 +727,7 @@
         <speciesReference name="pg6_mRNA" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.003376010008457219">
+    <reaction kineticConstant="0.0033804895630520195">
       <listOfReactants>
         <speciesReference name="pg6_gene_0" />
         <speciesReference name="iim0" />
@@ -734,7 +736,7 @@
         <speciesReference name="pg6_gene_1" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.001602584111493851">
+    <reaction kineticConstant="0.00155087749837842">
       <listOfReactants>
         <speciesReference name="pg6_gene_1" />
       </listOfReactants>
@@ -762,16 +764,16 @@
         <speciesReference name="iim0_es_iim0" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.008815789473684214">
+    <reaction kineticConstant="0.00940789473684211">
       <listOfReactants>
         <speciesReference name="pg6_mRNA" />
       </listOfReactants>
       <listOfProducts>
         <speciesReference name="pg6_mRNA" />
-        <speciesReference name="i0m3" />
+        <speciesReference name="i0t1_subm" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.003132576566446629">
+    <reaction kineticConstant="0.0028312755582956236">
       <listOfReactants>
         <speciesReference name="pg6_mRNA" />
       </listOfReactants>
@@ -779,7 +781,7 @@
         <speciesReference name="empty_set" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.009408259479707947">
+    <reaction kineticConstant="0.007087172519781477">
       <listOfReactants>
         <speciesReference name="pg7_gene_0" />
       </listOfReactants>
@@ -788,7 +790,7 @@
         <speciesReference name="pg7_mRNA" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.0033745031131713794">
+    <reaction kineticConstant="0.003637562427577343">
       <listOfReactants>
         <speciesReference name="pg7_gene_0" />
         <speciesReference name="iim1" />
@@ -797,7 +799,7 @@
         <speciesReference name="pg7_gene_1" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.0020794365672455097">
+    <reaction kineticConstant="0.0017224850251298127">
       <listOfReactants>
         <speciesReference name="pg7_gene_1" />
       </listOfReactants>
@@ -825,7 +827,7 @@
         <speciesReference name="iim1_es_iim1" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="0.010000000000000005">
+    <reaction kineticConstant="0.009210526315789478">
       <listOfReactants>
         <speciesReference name="pg7_mRNA" />
       </listOfReactants>
@@ -926,6 +928,58 @@
         <speciesReference name="empty_set" />
       </listOfProducts>
     </reaction>
+    <reaction kineticConstant="2.2782043289433355E-4">
+      <listOfReactants>
+        <speciesReference name="i0t1_subm" />
+        <speciesReference name="i0t1_subm" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="i0t1_subd" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="1.67E-5">
+      <listOfReactants>
+        <speciesReference name="i0t1_subd" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="i0t1_subm" />
+        <speciesReference name="i0t1_subm" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="0.0012893049310348898">
+      <listOfReactants>
+        <speciesReference name="i0t1_subd" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="5.900993280043064E-4">
+      <listOfReactants>
+        <speciesReference name="i0t1_subd" />
+        <speciesReference name="i0t1_subd" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="i0t1" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="1.67E-5">
+      <listOfReactants>
+        <speciesReference name="i0t1" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="i0t1_subd" />
+        <speciesReference name="i0t1_subd" />
+      </listOfProducts>
+    </reaction>
+    <reaction kineticConstant="8.993299844429143E-4">
+      <listOfReactants>
+        <speciesReference name="i0t1" />
+      </listOfReactants>
+      <listOfProducts>
+        <speciesReference name="empty_set" />
+      </listOfProducts>
+    </reaction>
     <reaction kineticConstant="4.2247142185372123E-4">
       <listOfReactants>
         <speciesReference name="i0t3_subm" />
@@ -942,9 +996,9 @@
         <speciesReference name="empty_set" />
       </listOfProducts>
     </reaction>
-    <reaction kineticConstant="1.9209625002918705E-4">
+    <reaction kineticConstant="9.609019766572513E-4">
       <listOfReactants>
-        <speciesReference name="i0m3" />
+        <speciesReference name="i0t1_subm" />
       </listOfReactants>
       <listOfProducts>
         <speciesReference name="empty_set" />

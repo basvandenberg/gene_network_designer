@@ -66,7 +66,8 @@ public class BioPartDatabase {
 	
 	/**
 	 * This function returns a list with promoters that bind all the transcription
-	 * factors given in tfs.
+	 * factors given in tfs. Returns null if there is no promoter that bind all
+	 * TFs.
 	 * @param tfs A list of transcription factors.
 	 * @return A list of promoters.
 	 */

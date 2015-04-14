@@ -30,18 +30,23 @@ public class SimLogicGeneNetwork {
 		
 		while(!correct) {
 			// ask for device (string representation)
-			System.out.println("\nProvide the string representation of the device:");
+			System.out.println("\nProvide the string representation of the device, or press q to exit:");
 			// read answer
 			String deviceString = s.nextLine();
-			try {
-				deviceSimulation(deviceString);
+			if(deviceString.equals("q")) {
 				correct = true;
 			}
-			catch(FileNotFoundException fnfe) {
-				System.out.println(fnfe.getMessage());
-			}
-			catch(Exception e) {
-				System.out.println("The provided string representation contains an error.");
+			else {
+				try {
+					deviceSimulation(deviceString);
+					correct = true;
+				}
+				catch(FileNotFoundException fnfe) {
+					System.out.println(fnfe.getMessage());
+				}
+				catch(Exception e) {
+					System.out.println("==> The provided string representation contains an error.");
+				}
 			}
 		}
 	}
@@ -71,11 +76,11 @@ public class SimLogicGeneNetwork {
 		int numOutputs = device.getOutputProteins().size();
 		for(int i = 0; i < numOutputs; i++) {
 			System.out.println("=> output " + i + ":");
-			System.out.println("--> correlation: " + Double.valueOf(decFormat.format(result[i*rpo + LogicGeneNetworkSimulation.CORRELATION])));
-			System.out.println("--> mean min low value: " + Double.valueOf(decFormat.format(result[i*rpo + LogicGeneNetworkSimulation.MEAN_MIN_LOW])));
-			System.out.println("--> mean max high value: " + Double.valueOf(decFormat.format(result[i*rpo + LogicGeneNetworkSimulation.MEAN_MAX_HIGH])));
+			System.out.println("--> correlation: " + decFormat.format(Double.valueOf(result[i*rpo + LogicGeneNetworkSimulation.CORRELATION])));
+			System.out.println("--> mean min low value: " + decFormat.format(Double.valueOf(result[i*rpo + LogicGeneNetworkSimulation.MEAN_MIN_LOW])));
+			System.out.println("--> mean max high value: " + decFormat.format(Double.valueOf(result[i*rpo + LogicGeneNetworkSimulation.MEAN_MAX_HIGH])));
 		}
-		System.out.println("--> score: " + result[result.length-1]);
+		System.out.println("--> score: " + decFormat.format(result[result.length-1]));
 		System.out.println("*** Logic device simulation done ***");
 		
 		return device;

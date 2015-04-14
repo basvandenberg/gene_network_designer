@@ -28,10 +28,14 @@ public class GeneNetworkDesigner {
 		
 		while(true) {
 			
-			System.out.println("\n1. Simulate a random logic gene network");
-			System.out.println("2. Simulate a logic gene network");
-			System.out.println("3. Simulate all possible logic gene networks");
-			System.out.println("4. (Re)Build bioparts database\n");
+			System.out.println("\n\n******************* Main Menu ********************");
+			System.out.println(    "*                                                *");
+			System.out.println(    "*  1. Simulate a random logic gene network       *");
+			System.out.println(    "*  2. Simulate a logic gene network              *");
+			System.out.println(    "*  3. Simulate all possible logic gene networks  *");
+			System.out.println(    "*  4. (Re)Build bioparts database                *");
+			System.out.println(    "*                                                *");
+			System.out.println(    "**************************************************");
 			System.out.print("Choose the program you want to run or 'q' to quit: ");
 
 			Scanner scanner = new Scanner(System.in);

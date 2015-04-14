@@ -332,7 +332,7 @@ public class LogicGeneNetworkSimulation {
 		DecimalFormat decFormat = new DecimalFormat("0.000");
 		String line = "";
 		for(int i = 0; i < score.length; i++) {
-			line += Double.valueOf(decFormat.format(score[i])) + "\t";
+			line += decFormat.format(Double.valueOf(score[i])) + "\t";
 		}
 		for(ProteinGenerator pg : device.getProteinGenerators()) {
 			line += pg.getPromoter().getName() + "\t";
